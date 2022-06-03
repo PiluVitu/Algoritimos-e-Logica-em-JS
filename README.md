@@ -14,3 +14,9 @@
   - Math.round() - Math.ceil() - Math.floor()
 [] Console
   - Pacote de funcionalidades para o console do devtools(Browser)
+[] Template literals ou template strings
+
+  - Interpolação de dados 
+  ```js
+  `loremloremlorem ${var}`
+  ```
