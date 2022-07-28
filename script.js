@@ -1,58 +1,25 @@
-//1-
-let weight
+/*
+  Function() constructor
 
-//2-
-console.log(typeof weight)
+  * Expressão New
+  * Criar um novo objeto 
+  * This Keyword
+*/
 
-//3-
-let name = 'Paulo'
-let age = 21
-let stars = 4.89
-let isSubscribed = true
+function Person(name, age, favoriteFood, sex, weight, height) {
+  this.name = name
+  this.age = age
+  this.favoriteFood = favoriteFood
+  this.sex = sex
+  this.weight = weight
+  this.height = height
 
-let student = {}
+  const converterHeight = (this.height / 100).toFixed(2)
 
-//4-
-console.log(typeof student)
-
-//4.1- 
-student = {
-  name: 'Paulo',
-  age: 21,
-  weight: 115,
-  isSubscribed: true,
+  const resume =`Meu nome é ${name} tenho ${age} anos, ${converterHeight}m de altura, peso ${weight}Kg, sou ${sex} e minha comida favorita é ${favoriteFood}.`
+  return console.log(resume)
 }
 
-console.log(student)
+const paulo = new Person('Paulo Victor', 21, 'Paçoca', 'Homem', 115, 179)
 
-//4.2
-console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg.`)
-
-//5- 
-let students = []
-
-
-//6- 
-students =[
-  student
-]
-
-console.log(students)
-
-//7- 
-console.log(students[0])
-
-//8- 
-const ricci = {
-  name: "Ricci",
-  age: 21,
-  weight: 56,
-  isSubscribed: true
-}
-students.push(ricci)
-console.log(students)
-
-//9
-let answer = 'undefined because var not be defined before console.log' 
-
-console.log({ricci})
+console.log(paulo)
