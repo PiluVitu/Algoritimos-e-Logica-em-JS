@@ -1,25 +1,9 @@
-/*
-  Function() constructor
+//Manipulando String e Número 
 
-  * Expressão New
-  * Criar um novo objeto 
-  * This Keyword
-*/
+//Transforme letras minúsculas em maiúsculas. Faça o comentário disso também 
 
-function Person(name, age, favoriteFood, sex, weight, height) {
-  this.name = name
-  this.age = age
-  this.favoriteFood = favoriteFood
-  this.sex = sex
-  this.weight = weight
-  this.height = height
 
-  const converterHeight = (this.height / 100).toFixed(2)
-
-  const resume =`Meu nome é ${name} tenho ${age} anos, ${converterHeight}m de altura, peso ${weight}Kg, sou ${sex} e minha comida favorita é ${favoriteFood}.`
-  return console.log(resume)
-}
-
-const paulo = new Person('Paulo Victor', 21, 'Paçoca', 'Homem', 115, 179)
-
-console.log(paulo)
+let stringOne  = 'cabo c ta ai ?'
+console.log(stringOne.toUpperCase())
+let stringTwo  = 'CABO C TA NÃO'
+console.log(stringTwo.toLowerCase())
